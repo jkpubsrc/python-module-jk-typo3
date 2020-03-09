@@ -20,6 +20,10 @@ print("Installed version: " + str(mgr.getVersion()))
 
 print()
 
+print("Site name: " + repr(mgr.getSiteName()))
+
+print()
+
 typo3Settings = jk_flexdata.FlexObject(mgr.getLocalSettings())
 dbSettings = typo3Settings.DB.Connections.Default
 assert dbSettings.driver == "mysqli"

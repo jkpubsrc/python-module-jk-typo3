@@ -50,6 +50,8 @@ class Typo3InstallationMgr(object):
 		assert os.path.isfile(self.__composerFilePath)
 
 		self.__typo3DirPath = typo3DirPath
+
+		self.__typo3LocalSettingsFile = None
 	#
 
 	#
@@ -68,10 +70,17 @@ class Typo3InstallationMgr(object):
 		return jk_version.Version(sVersion[1:])
 	#
 
+	def getSiteName(self) -> str:
+		s = self.getLocalSettings()
+		return s["SYS"]["sitename"]
+	#
+
 	def getLocalSettings(self) -> dict:
-		typo3LocalSettings = Typo3LocalConfigurationFile()
-		typo3LocalSettings.load(dirPath = self.__typo3DirPath)
-		return typo3LocalSettings.data
+		if self.__typo3LocalSettingsFile is None:
+			self.__typo3LocalSettingsFile = Typo3LocalConfigurationFile()
+			self.__typo3LocalSettingsFile.load(dirPath = self.__typo3DirPath)
+
+		return self.__typo3LocalSettingsFile.data
 	#
 
 #
