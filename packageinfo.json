@@ -1,0 +1,56 @@
+{
+	"language": "python3",
+	"name": "jk_typo3",
+	"version": "0.2020.3.9",
+	"meta": {
+		"description": "This module provides functions and classes to assist in working with Typo3 installations.",
+		"keywords": [
+			"typo3",
+			"php"
+		],
+		"license": "Apache 2.0",
+		"development_status": "alpha",
+		"authors": [
+			{
+				"name": "Jürgen Knauth",
+				"email": "pubsrc@binary-overflow.de"
+			}
+		],
+		"wiki": {
+			"page": "DevDocs:jk_typo3"
+		}
+	},
+	"repositories": [
+		{
+			"type": "github",
+			"user": "jkpubsrc",
+			"project": "python-module-jk-typo3",
+			"devon_publish": true
+		},
+		{
+			"type": "pypy",
+			"project": "jk_typo3",
+			"devon_publish": true
+		}
+	],
+	"source": {
+		"packages": [
+			"jk_typo3"
+		],
+		"extra_data_files": [
+		],
+		"extra_binary_files": [
+		]
+	},
+	"requirements": {
+		"python_packages": [
+			"jk_utils",
+			"jk_typing",
+			"jk_json",
+			"jk_version"
+		],
+		"python_packages_dev": [
+		]
+	}
+}
+

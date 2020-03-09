@@ -1,0 +1,41 @@
+
+
+
+
+
+
+
+
+S						->		phpintro	"return"	ASSOCARRAY		semicolon
+
+
+EMTPYARRAY				->		"["		"]"
+
+
+ASSOCARRAY				->		"["		(	ASSOCARRAY_ELEMENT	","		)+		ASSOCARRAY_ELEMENT?		"]"
+
+
+STDARRAY				->		"["		(	VALUE	","		)+		VALUE?		"]"
+
+
+ASSOCARRAY_ELEMENT		->		str1	"=>"		VALUE		","
+
+
+VALUE					->		int
+						|		str1
+						|		str2
+						|		bool
+						|		null
+						|		EMTPYARRAY
+						|		ASSOCARRAY
+						|		STDARRAY
+
+
+
+
+
+
+
+
+
+
