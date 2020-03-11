@@ -1,7 +1,7 @@
 {
 	"language": "python3",
 	"name": "jk_typo3",
-	"version": "0.2020.3.9",
+	"version": "0.2020.3.11",
 	"meta": {
 		"description": "This module provides functions and classes to assist in working with Typo3 installations.",
 		"keywords": [
@@ -9,7 +9,7 @@
 			"php"
 		],
 		"license": "Apache 2.0",
-		"development_status": "alpha",
+		"development_status": "beta",
 		"authors": [
 			{
 				"name": "Jürgen Knauth",
@@ -47,7 +47,8 @@
 			"jk_utils",
 			"jk_typing",
 			"jk_json",
-			"jk_version"
+			"jk_version",
+			"jk_php_tokenizer"
 		],
 		"python_packages_dev": [
 		]
