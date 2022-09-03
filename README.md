@@ -8,7 +8,7 @@ This module provides functions and classes to assist in working with Typo3 insta
 
 Information about this module can be found here:
 
-* [github.org](https://github.com/jkpubsrc/....)
+* [github.com](https://github.com/jkpubsrc/python-module-jk-typo3)
 * [pypi.python.org](https://pypi.python.org/pypi/jk_typo3)
 
 Why this module?
